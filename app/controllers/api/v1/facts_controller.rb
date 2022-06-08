@@ -13,7 +13,7 @@ class Api::V1::FactsController < ApplicationController
 
   # GET /members/:member_id/facts/:id
   def show
-    render json: @member.fact, status: 200
+    render json: @fact, status: 200
   end
 
   # POST /members/:member_id/facts
