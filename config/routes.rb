@@ -5,5 +5,5 @@ Rails.application.routes.draw do
                  registrations: 'users/registrations'
              }
   get '/test', to: 'test#show'
-  post '/users', to: 'test#register'
+  # post '/users', to: 'test#register'
 end
