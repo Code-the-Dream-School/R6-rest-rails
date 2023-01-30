@@ -15,7 +15,6 @@ class Api::V1::FactsController < ApplicationController
     def show
       # your code goes here
       if set_fact
-        byebugs
         render json: @fact, status: 200
       else
         render json: { error: 
