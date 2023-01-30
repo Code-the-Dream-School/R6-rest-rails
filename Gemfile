@@ -38,3 +38,14 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'devise'
+gem 'devise-jwt'
+gem 'rack-cors'
+gem 'rspec-rails'
+gem 'rexml'
+gem 'rswag'
+group :test do
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rails-controller-testing'
+end
