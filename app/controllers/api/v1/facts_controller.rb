@@ -15,6 +15,7 @@ class Api::V1::FactsController < ApplicationController
     def show
       # your code goes here
       if set_fact
+        byebugs
         render json: @fact, status: 200
       else
         render json: { error: 
@@ -38,9 +39,12 @@ class Api::V1::FactsController < ApplicationController
   
     # PUT /members/:member_id/facts/:id
     def update
+      
       # your code goes here
       @fact = Fact.find(params[:id])
+ 
       if @fact.update(fact_params)
+
         render json: @fact, status: 200
     else
         render json: { error: 
